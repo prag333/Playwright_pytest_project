@@ -59,5 +59,5 @@ This will start a web server and open the Allure report in your default browser.
 
 - **Playwright**: Automates the browser actions (such as clicking, navigating, and interacting with the webpage).
 - **Pytest**: Framework used for test execution, assertion, and hooks to manage setup/teardown.
-- **Allure**: Generates visually appealing HTML reports, providing detailed information about each test, including logs and screenshots.
+- **Allure**: Generates visually appealing HTML reports, providing detailed information about each test, including logs.
 - **Logging**: Logs for each test case are captured and attached to Allure for detailed debugging.
