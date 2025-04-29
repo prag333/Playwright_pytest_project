@@ -23,7 +23,6 @@ class TestHomeFeaturePage:
         self.homefeature_page.scroll_to_element(self.homefeature_page.PFIZER_FOR_ALL_LOGO)
         self.homefeature_page.scroll_to_element(self.homefeature_page.MENU)
 
-
     def test_verify_the_display_of_pfizerforall_logo_and_menu_section(self):
 
         logger.info("Test verify_the_display_of_pfizerforall_logo_and_menu_section")
@@ -59,7 +58,6 @@ class TestHomeFeaturePage:
         self.home_page.wait_for_timeout(15)
         logger.info("Verify Close Button")
         assert self.homefeature_page.is_visible(self.homefeature_page.CLOSE_BTN), "Close is not displayed"
-
 
     def test_verify_the_welcome_to_pfizerforalltm_section(self):
         logger.info("Test verify the welcome to pfizerforalltm section")
@@ -123,7 +121,6 @@ class TestHomeFeaturePage:
         self.homefeature_page.get_text(self.homefeature_page.GET_ANSWERS_TO_HEALTH_AND_WELLNESS_QUESTIONS_TEXT_IS), \
             "Get answers to health and wellness questions is not displayed"
 
-
     def test_verify_two_cards_section(self):
         logger.info("Test Verify two cards section")
         logger.info("Click menu section")
@@ -171,7 +168,6 @@ class TestHomeFeaturePage:
         logger.info("Get the url")
         assert f"{self.base_url}/migraine/" in self.homefeature_page.get_url()
 
-
     def test_verify_prevention_card(self):
         logger.info("Test verify prevention card")
         logger.info("Click menu section")
@@ -193,7 +189,6 @@ class TestHomeFeaturePage:
         self.homefeature_page.click_prevention_get_started()
         logger.info("Get the url")
         assert f"{self.base_url}/vaccine-options" in self.homefeature_page.get_url()
-
 
     def test_verify_prevention_card_afford_your_pfizer_medications(self):
         logger.info("Test verify prevention card afford your pfizer medications")
@@ -222,7 +217,6 @@ class TestHomeFeaturePage:
         self.homefeature_page.click_get_started()
         logger.info("Get the url")
         assert f"{self.base_url}/prescription-assistance" in self.homefeature_page.get_url()
-
 
     def test_verify_disclaimer_text_on_home_page(self):
         logger.info("Test verify disclaimer text on home page")

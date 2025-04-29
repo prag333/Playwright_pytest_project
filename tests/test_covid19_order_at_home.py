@@ -13,11 +13,6 @@ class TestCovid19OrderAtHomePage:
         self.base_url = BASE_URL
         self.covid19_orderat_page = Covid19OrderAtHomePage(driver)
         self.home_page = HomePage(driver)
-
-        #   Given Browser is maximized
-        #         And I am on the url '/'
-        #         And I pause for '5' s
-
         logger.info("Common steps for Covid19TalkDoctorPage")
         self.home_page.go_to_homepage(self.base_url)
         assert "Pfizer" in driver.title()
@@ -33,6 +28,7 @@ class TestCovid19OrderAtHomePage:
         # assert "Respiratory Testing | PfizerForAll™" in self.covid19_orderat_page.get_text(self.covid19_orderat_page.TITLE_IS), "Title is not displayed"
 
         # Scenario: 1 Verify navigation to Instacart and Amazon from Hero section of COVID-19 Order at-home page
+
     def test_verify_navigation_to_Instacart_and_Amazon_from_Hero_section_covid19_order_at_home_page(self):
         self.covid19_orderat_page.is_visible(self.covid19_orderat_page.HERO_TEXT), "Hero text is not displayed"
         assert "An at-home test can tell you if you have COVID-19 or flu." in self.covid19_orderat_page.get_text(self.covid19_orderat_page.HERO_TEXT_IS), "Hero text is not displayed"

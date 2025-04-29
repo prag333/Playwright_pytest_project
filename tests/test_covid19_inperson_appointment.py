@@ -68,7 +68,7 @@ class TestCovid19InPersonPage:
 
         # Scenario:2 Verify "Booking is quick and simple" section
 
-    def test_verify_Booking_is_quick_and_simple_section(self):
+    def test_verify_booking_is_quick_and_simple_section(self):
         logger.info("Test Verify booking is quick and simple section")
         logger.info("Scroll to the Booking heading")
         self.covid19_inperson_page.scroll_to_element(self.covid19_inperson_page.BOOKING_HEADING)
@@ -101,9 +101,7 @@ class TestCovid19InPersonPage:
         logger.info("Verify the confirmed text is")
         assert "Receive an email with appointment details, and you’re ready to go!" in self.covid19_inperson_page.get_text(self.covid19_inperson_page.CONFIRMED_TEXT_IS), "Receive an email with appointment details, and you’re ready to go! is not displayed"
 
-    # Scenario:3 Verify section "Save on your prescribed Pfizer medications, and get support when you need it"
-
-    def test_verify_Save_on_your_prescribed_Pfizer_medications(self):
+    def test_verify_save_on_your_prescribed_pfizer_medications(self):
         logger.info("Test Verify Save_on_your_prescribed_Pfizer_medications")
         logger.info("Scroll to the save prescribed medication section")
         self.covid19_inperson_page.scroll_to_element(self.covid19_inperson_page.SAVE_PRESCRIBED_MEDICATIONS_SECTION)
@@ -122,7 +120,7 @@ class TestCovid19InPersonPage:
 
         # Scenario:4 Verify disclaimer text on "Covid-19 In-person Appointment" page
 
-    def test_verify_disclaimer_text_on_Covid19_Inperson_Appointment(self):
+    def test_verify_disclaimer_text_on_covid19_inperson_appointment(self):
         logger.info("Test verify_disclaimer_text_on_Covid19_Inperson_Appointment")
         logger.info("Click the bottom of the page")
         self.covid19_inperson_page.scroll_to_element(self.covid19_inperson_page.BOTTOM_OF_THE_PAGE)

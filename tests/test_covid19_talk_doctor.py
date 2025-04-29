@@ -30,6 +30,7 @@ class TestCovid19TalkDoctorPage:
         assert 'Book a Telehealth Respiratory Appointment | PfizerForAll™' in self.covid19_doctor_page.get_title(), "Book a Telehealth Respiratory Appointment | PfizerForAll™ is not displayed"
 
          # Scenario:-1 Verify the hero banner
+
     def test_verify_the_hero_banner(self):
         self.covid19_doctor_page.scroll_to_element(self.covid19_doctor_page.TITLE)
         assert "See a doctor right away with telehealth." in self.covid19_doctor_page.get_text(self.covid19_doctor_page.TITLE_TEXT_IS), "See a doctor right away with telehealth."
@@ -111,7 +112,7 @@ class TestCovid19TalkDoctorPage:
 
         # Scenario: Verify disclaimer text on Covid19 talk to doctor page
 
-    def test_verify_disclaimer_text_on_Covid19_talk_to_doctor_page(self):
+    def test_verify_disclaimer_text_on_covid19_talk_to_doctor_page(self):
         self.covid19_doctor_page.scroll_to_element(self.covid19_doctor_page.BOTTOM_OF_DISCLAIMER)
         assert "FOR U.S. RESIDENTS ONLY. The information provided is for educational purposes only and is not intended to replace discussions with a healthcare professional.© 2025 Pfizer Inc. All rights reserved. PP-UNP-USA-6048" in self.covid19_doctor_page.get_text(self.covid19_doctor_page.BOTTOM_OF_DISCLAIMER_TEXT_IS)
 
@@ -141,4 +142,3 @@ class TestCovid19TalkDoctorPage:
         self.covid19_doctor_page.click_fag_4_icon()
         self.covid19_doctor_page.is_visible(self.covid19_doctor_page.FAG_4_DETAILS), "Fag 4 details is not displayed"
         assert "Not necessarily. You’ll just need to complete a medical questionnaire and have your computer or phone ready for the virtual appointment. You also may want to have your FSA or HSA info ready (if you have either type of account) as you can use those funds towards payment." in self.covid19_doctor_page.get_text(self.covid19_doctor_page.FAG_4_DETAILS_TEXT_IS), "Fag 4 details is not displayed"
-

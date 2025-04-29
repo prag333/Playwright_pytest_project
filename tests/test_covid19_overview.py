@@ -22,7 +22,7 @@ class TestCovidPage:
         self.covid19_page.click_covid19_flu_overview()
         assert self.covid19_page.is_visible(self.covid19_page.TITLE_PFIZER_FOR_ALL, timeout=5)
 
-    def __test_telehealth_page(self):
+    def test_telehealth_page(self):
         assert self.covid19_page.is_visible(self.covid19_page.HERO_TEXT)
         assert "COVID-19" in self.covid19_page.get_text(self.covid19_page.HERO_TEXT_CONTAINS_COVID19), "Covid-19 is not displayed"
         assert "Book a $35 virtual visit now" == self.covid19_page.get_text(self.covid19_page.BOOK_A_35_VIRTUAL_VISIT_NOW), \
@@ -38,7 +38,7 @@ class TestCovidPage:
         assert "telehealth" in self.covid19_page.get_url()
         assert self.covid19_page.is_visible(self.covid19_page.SCHEDULE_BTN)
 
-    def __test_verify_what_works_section(self):
+    def test_verify_what_works_section(self):
         self.covid19_page.scroll_to_element(self.covid19_page.HEADER)
         assert self.covid19_page.is_visible(self.covid19_page.HEADER), "Header is not displayed"
         assert "Find what works for you." in self.covid19_page.get_text(self.covid19_page.HEADER_TEXT_IS), \
@@ -105,7 +105,8 @@ class TestCovidPage:
         assert self.covid19_page.is_visible(self.covid19_page.TELEHEALTH_APPOINTMENT_LINK)
 
         #  Scenario 4
-    def __test_verify_some_respiratory_conditions_section(self):
+
+    def test_verify_some_respiratory_conditions_section(self):
         self.covid19_page.scroll_to_element(self.covid19_page.RESPIRATORY_TEXT)
         assert "Some respiratory conditions have some similar symptoms. Here are a few of the most common." in self.covid19_page.get_text(self.covid19_page.RESPIRATORY_TEXT)
         # assert not self.covid19_page.is_element_enabled(self.covid19_page.COVID19), "COVID19 is not enabled"
@@ -124,7 +125,8 @@ class TestCovidPage:
         assert "Pneumococcal pneumonia is an infection of the lungs. If you're 50+ or 19+ with certain chronic conditions like asthma, diabetes, COPD, or heart disease, you're at increased risk for pneumonia." in self.covid19_page.get_text(self.covid19_page.PNEUMONIA_INFO_TEXT)
 
         # # Scenario 5cards on Some respiratory conditions section
-    def __test_verify_cards_on_some_respiratory_conditions_section(self):
+
+    def test_verify_cards_on_some_respiratory_conditions_section(self):
         self.covid19_page.scroll_to_element(self.covid19_page.TALK_TO_A_DOCTOR_NOW)
         assert self.covid19_page.is_element_enabled(self.covid19_page.TALK_TO_A_DOCTOR_NOW)
         assert "Talk to a doctor now about treatment options. Get your medications delivered right to your door." in self.covid19_page.get_text(self.covid19_page.TALK_TO_A_DOCTOR_NOW_TEXT)
@@ -151,8 +153,7 @@ class TestCovidPage:
         self.covid19_page.click_order_tests_arrow_button()
         assert f"{self.base_url}/respiratory/testing" in self.covid19_page.get_url()
 
-    #   Scenario 6
-    def __test_verify_respiratory_conditions_and_faq_answers(self):
+    def test_verify_respiratory_conditions_and_faq_answers(self):
         self.covid19_page.scroll_to_element(self.covid19_page.FAG_SCETION_TEXT)
         assert "Frequently asked questions" in self.covid19_page.get_text(self.covid19_page.FAG_SCETION_TEXT), "Frequently asked questions is not displayed"
         self.covid19_page.scroll_to_element(self.covid19_page.FAG_ONE_QUESTION)
