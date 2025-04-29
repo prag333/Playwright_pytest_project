@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1415","test_verify_faq_section","tests","Tue Apr 29 17:39:34 IST 2025","passed","Tue Apr 29 17:39:35 IST 2025","TestCovid19InPersonPage","test_covid19_inperson_appointment","",""
+"","2106","test_verify_Save_on_your_prescribed_Pfizer_medications","tests","Tue Apr 29 17:39:16 IST 2025","passed","Tue Apr 29 17:39:18 IST 2025","TestCovid19InPersonPage","test_covid19_inperson_appointment","",""
+"","2060","test_verify_the_zocdoc_popup_covid19_inperson_appointment","tests","Tue Apr 29 17:39:16 IST 2025","passed","Tue Apr 29 17:39:18 IST 2025","TestCovid19InPersonPage","test_covid19_inperson_appointment","",""
+"","2049","test_verify_disclaimer_text_on_Covid19_Inperson_Appointment","tests","Tue Apr 29 17:39:36 IST 2025","passed","Tue Apr 29 17:39:38 IST 2025","TestCovid19InPersonPage","test_covid19_inperson_appointment","",""
+"","104","test_verify_Booking_is_quick_and_simple_section","tests","Tue Apr 29 17:39:16 IST 2025","passed","Tue Apr 29 17:39:16 IST 2025","TestCovid19InPersonPage","test_covid19_inperson_appointment","",""

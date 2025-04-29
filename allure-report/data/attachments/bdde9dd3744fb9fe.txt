@@ -1,0 +1,20 @@
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:17 Common steps for Covid19TalkDoctorPage
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:20 Verify the accept all
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:22 Click the accept cookies
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:24 Scroll to the menu button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:26 Click the menu button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:28 Verify the covid19 flu text is
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:30 Click the covid19 flu button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:32 Verify the covid19 flu overview text is
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:34 Click thecovid19 flu overview button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:38 Scroll to the make an appointment
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:40 Verify make an appointment
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:42 click make an appointment arrow button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:47 Verify title text is
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:49 Verify the subtext is
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:51 Verify the book appointment button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:58 Test verify the zocdoc popup covid19 inperson appointment
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:59 Click book appointment button
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:62 Verify zocdoc title text is
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:64 Verify continue to zocdoc button text
+INFO     tests.test_covid19_inperson_appointment:test_covid19_inperson_appointment.py:66 Verify the Disclaimer text is
