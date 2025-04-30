@@ -30,7 +30,10 @@ class BasePage:
 
     def get_text(self, locator: tuple):
         """Get text from a single element."""
-        return self.find_element(locator).text_content()
+        try:
+            return self.find_element(locator).text_content()
+        except PlaywrightTimeoutError:
+            return None
 
     def is_visible(self, locator: tuple, timeout: int = 10) -> bool:
         """Check if element is visible on the page."""
@@ -102,3 +105,5 @@ class BasePage:
         new_tab.wait_for_load_state()
         new_tab.close()
 
+    def get_open_tab_count(self):
+        return len(self.page.context.pages)
