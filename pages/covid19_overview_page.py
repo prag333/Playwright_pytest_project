@@ -43,52 +43,24 @@ class Covid19OverviewPage(BasePage):
     TAKE_A_TEST_RIGHT_AT_HOME_HEADER_TEXT = ('XPATH', "(//h3[contains(@id, 'take-a-test-right-at-home.')])[2]")
     TAKE_A_TEST_RIGHT_AT_HOME_INFO_TEXT = ('XPATH', "(//*[text()='COVID-19 or flu? With some similar symptoms, it’s hard to know. At-home tests are available. Explore your options.'])[2]")
     EXPLORE_YOUR_OPTIONS_BUTTON = ('XPATH', "//a[contains(@aria-label, 'Take a test, right at home, Explore your options')]")
-    # ======================
-    'Then There are "2" tabs currently opened'
-    " When I focus the last opened window "
-    " Then The page url contains 'www.instacart.com/store/brands/pfizer-for-all "
-    " When I close the current opened tab "
-    " And I focus the last opened window "
-    " And The element 'covid19_page > dialog_box > close_btn' is displayed "
-    " And I click on element 'covid19_page > dialog_box > close_btn' "
     MOLECULAR_TESTS_HEADER_TEXT_AMAZON = ('xpath', "//h3[contains(@id, 'shop-tests-on-amazon')]")
     MOLECULAR_TESTS_HEADER_BUTTON = ('XPATH', "(//a[contains(@aria-label, 'Shop tests on Amazon')])[1]")
-    "Then There are '2' tabs currently opened"
-    "When I focus the last opened window"
-    " Then The page url contains 'https://www.amazon.com/s?k=covid-flu+test'"
-    "  When I close the last opened window "
-    " And I focus the last opened window "
-    " And The element 'covid19_page > dialog_box > close_btn' is displayed "
-    " And I click on element 'covid19_page > dialog_box > close_btn' "
     ANTIGEN_TESTS_HEADER_INSTACART = ('XPATH', "//h2[contains(@id, 'the-sooner-you-test-the-sooner-youll-have-answers')]")
     MOLECULAR_TESTS_HEADER_AMAZON = ('XPATH', "//h3[contains(@ id, 'shop-tests-on-amazon')]")
+
     # Scenario 3:-  Verify I tested positive for COVID-19 or flu on the How can we help section - telehealth and in person appointment
     TESTED_POSITIVE = ('XPATH', "//h2[contains(@id, 'i-tested-positive-for-covid19-or-flu')]")
     TESTED_POSITIVE_BUTTON = ('XPATH', "//a[contains(@aria-label, 'I tested positive for COVID‑19 or flu.')]")
     QUICK_ANSWER_GUIDE_TEXT = ('XPATH', "//h2[contains(@id, 'if-youre-sick-you-can-talk-to-a-doctor-about-treatments-now')]")
     TELEHEALTH_APPOINTMENT_TEXT = ('XPATH', "//a[contains(@id, 'respiratory-quick-answer-guide-2')]")
-    TELEHEALTH_APPOINTMENT_TEXT_IS = ('XPATH', "//a[contains(@aria-label, 'Book a $35 telehealth appointment')]")
+    TELEHEALTH_APPOINTMENT_TEXT_IS = ('XPATH', "//h3[contains(@id, 'book-a-35-telehealth-appointment')]")
     BOOK_IN_PERSON_APPOINTMENT_TEXT = ('XPATH', "//h3[contains(@id, 'book-an-inperson-appointment')]")
     TELEHEALTH_APPOINTMENT_LINK = ('XPATH', "//a[contains(@aria-label, 'Book a $35 telehealth appointment')]")
     SEE_DOCTOR_AT_UPSCRIPT = ('XPATH', "//a[contains(@id, 'overlay-external-link-0')]")
-    "   Then There are '2' tabs currently opened "
-    "  And The url 'https://upscriptcare.com/products/respiratory?t=respiratory_s2' is opened in a new tab "
-    " When I pause for '3' s "
-    " And I close the last opened window "
-    " And I focus the last opened window "
-    "  And The element 'covid19_page > dialog_box > close_btn' is displayed "
-    "  And I click on element 'covid19_page > dialog_box > close_btn' "
     BOOK_IN_PERSON_APPOINTMENT_LINK = ('XPATH', "//a[contains(@aria-label, 'Book an in‑person appointment')]")
     LEAVING_PFIZER_TO_ZOCDOC_TEXT = ('XPATH', "(//*[text()='You are leaving PfizerForAll™ to go to Zocdoc.com'])[2]")
-    CONTINUE_TO_ZOCDOC = ('XPATH', "(//a[contains(@class, 'button primary long-cta')])[2]")
-
-    " Then There are '2' tabs currently opened "
-    " When I focus the last opened window "
-    "Then The page url contains 'https://www.zocdoc.com' "
-    " When I pause for '3' s "
-    " And I close the last opened window "
-    " And I focus the last opened window "
-    " And I click on element 'covid19_page > dialog_box > close_btn' "
+    CONTINUE_TO_ZOCDOC = ('XPATH', "//a[@title='Continue to Zocdoc']")
+    CLOSE_BUTTON = ('XPATH', "//span[contains(@class, 'icon icon-close-small')]")
 
     # Scenario 4:-  Verify Some respiratory conditions section
     RESPIRATORY_TEXT = ('XPATH', "//h2[contains(@id, 'some-respiratory-conditions-have-some-similar-symptoms-here-are-a-few-of-the-most-common')]")
@@ -106,11 +78,10 @@ class Covid19OverviewPage(BasePage):
     PNEUMONIA_INFO_TEXT = ('XPATH', "(//div[contains(@class, 'cards horizontal-scroll body-cards disable-hover-effect block')]//li[contains(@data-smartcapture, 'slideshow-slide')])[4]")
 
     # Scenario 5:-  Verify clickable cards on Some respiratory conditions section
-
     TALK_TO_A_DOCTOR_NOW = ('XPATH', "(//*[text()='Talk to a doctor now'])[3]")
     TALK_TO_A_DOCTOR_NOW_TEXT = ('XPATH', "//h2[contains(@id, 'talk-to-a-doctor-now-about-treatment-options-get-your-medications-delivered-right-to-your-door')]")
     PHONE_IMAGE = ('XPATH', "//img[@alt='Hand holding phone']")
-    TALK_TO_A_DOCTOR_NOW_ARROW_BUTTON = ('XPATH', "//a[contains(@id, 'respiratory-non-homepage--2')]")
+    TALK_TO_A_DOCTOR_NOW_ARROW_BUTTON = ('XPATH', "(//a[contains(@id, 'overlay-external-link-0')])[2]")
     MAKE_AN_APPOINTMENT = ('XPATH', "//*[text()='Make an appointment']")
     MAKE_AN_APPOINTMENT_TEXT = ('XPATH', "//h2[contains(@id, 'make-an-appointment-to-see-a-doctor-near-you-on-your-schedule')]")
     STETHOSCOPE_IMAGE = ('XPATH', "//*[@alt='Stethoscope']")
@@ -121,7 +92,6 @@ class Covid19OverviewPage(BasePage):
     ORDER_TESTS_ARROW_BUTTON = ('XPATH', "//a[contains(@id, 'respiratory-non-homepage--4')]")
 
     # Scenario 6:- Verify Some respiratory conditions - FAQ section
-
     FAG_SCETION_TEXT = ('XPATH', "//h2[contains(@id, 'frequently-asked-questions')]")
     FAG_ONE_QUESTION = ('XPATH', "(//span[contains(@class, 'icon icon-lib-mat-expand-more')])[1]")
     FAG_ONE_TEXT = ('XPATH', "(//div[contains(@class, 'custom-accordion-item-body')])[1]")
@@ -187,8 +157,8 @@ class Covid19OverviewPage(BasePage):
         self.click(self.BOOK_IN_PERSON_APPOINTMENT_LINK)
 
     def click_continue_to_zocdoc(self):
-        self.wait_until_visible(self.TALK_TO_A_DOCTOR_NOW_ARROW_BUTTON, timeout=10)
-        self.click(self.TALK_TO_A_DOCTOR_NOW_ARROW_BUTTON)
+        self.wait_until_visible(self.CONTINUE_TO_ZOCDOC, timeout=10)
+        self.click(self.CONTINUE_TO_ZOCDOC)
 
     def click_talk_to_a_doctor_now_arrow_button(self):
         self.wait_until_visible(self.TALK_TO_A_DOCTOR_NOW_ARROW_BUTTON, timeout=10)
@@ -217,4 +187,8 @@ class Covid19OverviewPage(BasePage):
     def click_fag_four_question(self):
         self.wait_until_visible(self.FAG_FOUR_QUESTION, timeout=10)
         self.click(self.FAG_FOUR_QUESTION)
+
+    def click_close_button(self):
+        self.wait_until_visible(self.CLOSE_BUTTON, timeout=10)
+        self.click(self.CLOSE_BUTTON)
 
